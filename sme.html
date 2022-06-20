@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+/* BeginOAWidget_Instance_2102522: #navigation */
+ul#navigation {
+      position: fixed;
+      margin: 0px;
+      padding: 0px;
+      top: 0px;
+      right: 10px;
+      list-style: none;
+      z-index:999999;
+      width:auto;
+      }
+      ul#navigation li {
+      display:inline;
+      float:left; 
+      width:102px;   
+      }
+      ul#navigation li a {
+      display: block;
+      float:left;
+	  color: #00F;
+      margin-top: -2px;
+      height: 25px;
+      width:100px;
+      background-repeat:no-repeat;
+      background-position:50% 10px;
+      background-color:#E7F2F9;
+      border:1 solid #BDDCEF;
+      -moz-border-radius:0px 0px 10px 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -khtml-border-bottom-right-radius: 10px;
+      -khtml-border-bottom-left-radius: 10px;
+      text-decoration:none;
+      text-align:center;
+      padding-top:20px;
+      opacity: 0.7;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);  
+      }
+      
+      ul#navigation li a:hover{
+	background-color: #CAE3F2;
+	color: #000099;
+      }
+      ul#navigation .home a{
+      background-image: url(/png/teaser.png);
+      }
+      ul#navigation .about a{
+      background-image: url(/png/notes.png);
+      }
+      ul#navigation .search a{
+      background-image: url(/png/notes.png);
+      }
+      ul#navigation .podcasts a{
+      background-image: url(/png/ipod.png);
+      }
+      ul#navigation .rssfeed a{
+      background-image: url(/png/weather.png);
+      }
+      ul#navigation .photos a{
+      background-image: url(/png/maps.png);
+      }
+      ul#navigation .contact a{
+      background-image: url(/png/chat.png);
+      }
+.mnutxt {
+	font-size: large;
+	font-style: normal;
+	font-weight: bold;
+	color: #00F;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2102522" binding="#navigation" />
+</oa:widgets>
+-->
+</script>
+
+</head>
+
+<body>
+
+<ul id="navigation">
+  <li class="mnutxt"><a href="sme-teaser.htm" target="content">Teaser</a></li>
+  <li class="mnutxt"><a href="slideshow.html" target="content">Slide Show</a></li>
+  <li class="mnutxt"><a href="">Video</a></li>
+  <li class="mnutxt"><a href="finmodel.htm" target="content">Financials</a></li>
+  <li class="mnutxt"><a href="../contact.html" target="content">Contact</a></li>
+</ul>
+<script type="text/javascript">
+// BeginOAWidget_Instance_2102522: #navigation
+$(function() {
+      var d=300;
+      $('#navigation a').each(function(){
+      $(this).stop().animate({
+      'marginTop':'-80px'
+      },d+=150);
+      });
+      $('#navigation > li').hover(
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-2px'
+      },200);
+      },
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-80px'
+      },200);
+      }
+      );
+      });
+// EndOAWidget_Instance_2102522
+</script>
+<div id="content"><iframe src="slideshow.html" name="content" width="100%" height="850" class="mnutxt"></iframe></div>  
+
+  <footer>
+    <p> Project development by SEKOM Handelsges.m.b.H, Vienna, Austria</p>
+    <address>
+      <a href="http://www.sekom.com/sme">www.sekom.com/sme</a>, tel: +43-676-6916321, <a href="mailto:office@sekom.com">email: office@sekom.com</a>
+    </address>
+</footer>
+<!-- end .container --></div>
+</body>
+</html>
